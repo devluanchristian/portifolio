@@ -5,8 +5,83 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Sans", serif;
+    --font-action: "Mulish", sans-serif;
+    --color-primary: #4b6cb7;
+    --color-secundary:#182848 ;
 }
 
+.hamburguer{
+    width:2rem;
+    height:2rem;
+    position:fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 1s;
+}
+.show-menu .hamburguer{
+    right: 15rem;
+
+}
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: transform 1s;
+  
+}
+.show-menu #line1{
+    transform:rotate(45deg) translate(.3rem, .45rem);
+
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.show-menu #line3{
+    transform:rotate(-45deg) translate( .1rem, -.45rem);
+
+
+}
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height:2rem;
+    width: 6rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    font-family: var(--font-action);
+    background-color: var(--color-primary);
+    opacity: 0;
+}
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid var(--color-primary);
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+.show-menu .hamburguer:hover span{
+    opacity: 1;
+
+}
 header {
     width: 100%;
     height: 100vh;
@@ -46,7 +121,7 @@ header {
 .banner h1 {
     color: #ffffff;
     font-size: 3.5em;
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--font-primary);
     font-weight: 200;
     text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, 0.4);
     line-height: 4rem;
@@ -56,7 +131,7 @@ header {
 }
 
 .banner p {
-    font-family: "Josefin Sans", serif;
+    font-family: var(--font-secundary);
     color: #ffffff;
     font-weight: 200;
     font-size: 1.6rem;
@@ -67,13 +142,13 @@ header {
 }
 
 .banner button {
-    font-family: "Mulish", sans-serif;
+    font-family: var(--font-action);
     color: #fff;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    background: #4b6cb7;
-    background: -webkit-linear-gradient(to right,#4b6cb7,#182848);
-    background: linear-gradient(to right,#4b6cb7,#182848);
+    background: var(--color-primary);
+    background: -webkit-linear-gradient(to right,var(--color-primary),var(--color-secundary));
+    background: linear-gradient(to right,var(--color-primary),var(--color-secundary));
     padding: 1rem 3rem;
     border-radius: 5px;
     border: none;
@@ -83,7 +158,7 @@ header {
 }
 
 .banner button:hover{
-    color: black;
+    color: var(--color-secundary);
 }
 
 @keyframes moverBanner{
@@ -95,3 +170,65 @@ header {
         opacity: 1;
     }
 }
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+.show-menu .sidebar{
+    right:0;
+
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.menu-link{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+
+}
+.menu-link:hover{
+    color: var(--color-primary);
+    transition: color 0.7s;
+}
+.rede-sociais{
+    position: absolute;
+    bottom:2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rede-sociais i{
+    background-color: var(--color-primary);
+    color: rgba(255, 255, 255, 1);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.9s;
+}
+.rede-sociais i:hover{
+    background-color:var(--color-secundary);
+}
+
+
