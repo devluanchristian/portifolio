@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,700&display=swap');
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
@@ -12,8 +13,18 @@
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Sans", serif;
     --font-action: "Mulish", sans-serif;
-    --color-primary: #4b6cb7;
-    --color-secundary:#182848 ;
+    --font-terce: "Poppins", serif;
+
+    --color-primary: #c20846; 
+    --color-secundary: #591515;
+
+    --color-button: #31343ae7;
+    --color-button2: #833166;
+
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .hamburguer{
@@ -117,10 +128,10 @@ header {
     color: #ffffff;
     font-size: 3.5em;
     font-family: var(--font-primary);
-    font-weight: 200;
+    font-weight: 600;
     text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, 0.4);
     line-height: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: .8rem;
     opacity: 0;
     animation: moverBanner 1s 0.5s forwards;
 }
@@ -128,10 +139,10 @@ header {
 .banner p {
     font-family: var(--font-secundary);
     color: #ffffff;
-    font-weight: 200;
-    font-size: 1.6rem;
-    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2.4rem;
     opacity: 0;
     animation: moverBanner 1s 0.7s forwards;
 }
@@ -141,9 +152,9 @@ header {
     color: #fff;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    background: var(--color-primary);
-    background: -webkit-linear-gradient(to right,var(--color-primary),var(--color-secundary));
-    background: linear-gradient(to right,var(--color-primary),var(--color-secundary));
+    background: var(--color-button);
+    background: -webkit-linear-gradient(to right,var(--color-button),var(--color-button2));
+    background: linear-gradient(to right,var(--color-button),var(--color-button2));
     padding: 1rem 3rem;
     border-radius: 5px;
     border: none;
@@ -153,7 +164,7 @@ header {
 }
 
 .banner button:hover{
-    color: var(--color-secundary);
+    color: black;
 }
 
 @keyframes moverBanner{
@@ -197,7 +208,8 @@ header {
 .menu-link{
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
+    color: #353434;
+    
 
 }
 .menu-link:hover{
@@ -233,6 +245,7 @@ header {
 
 .conhecimentos {
     display: grid;
+    
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(6, 6rem);
     row-gap: .5rem;
@@ -278,9 +291,9 @@ header {
 }
 
 .sessao-header h1 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: #4b4b4b;
+    font-family: var(--font-terce);
+    font-size: 2.5rem;
+    color: #353434;
     border-bottom: solid 3px var(--color-primary);
     margin-bottom: 1.2rem;
 }
@@ -288,20 +301,23 @@ header {
 .conhecimento-header{
     display: flex;
     align-items: center;
-    color: #4b4b4b;
+    color: #353434;
 }
 .conhecimento-header i{
     font-size: 2rem;
 
 } 
 .conhecimento-header h3 {
-    font-family: var(--font-secundary);
-    font-size: 1.5rem;
+    font-family: var(--font-terce);
+    font-size: 1.2rem;
     padding-left: 1rem;
+    color: #353434;
+    
 }
 
 .conhecimento-text{
-    font-family: var(--font-secundary);
+    font-family: var(--font-terce);
+    font-size: .8rem;
     margin-top: 1rem;
 }
 
@@ -318,6 +334,15 @@ header {
 .projetos{
     display: flex;
     justify-content:space-evenly;
+}
+.sessao-projetos{
+    margin-bottom: 2rem;
+}
+.sessao-projetos h1{
+    font-family: var(--font-terce);
+    font-weight: 400;
+    color: #353434;
+
 }
 
 .card{
@@ -337,11 +362,11 @@ header {
     height: 100%;
     border-radius: .5rem;
     opacity:.8;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .card:hover .card-img-wrapper img{
-    opacity: .5;
+    opacity: .4;
    
 }
 
@@ -381,9 +406,9 @@ header {
 .card-info button{
     width: 8rem;
     height: 2.5rem;
-    background: var(--color-primary);
-    background: -webkit-linear-gradient(to right,var(--color-primary),var(--color-secundary));
-    background: linear-gradient(to right,var(--color-primary),var(--color-secundary));
+    background: var(--color-button);
+    background: -webkit-linear-gradient(to right,var(--color-button),var(--color-button2));
+    background: linear-gradient(to right,var(--color-button),var(--color-button2));
     font-family: var(--font-action);
     color: #eee;
     font-size: .8rem;
@@ -396,4 +421,108 @@ header {
     opacity: 1;
     visibility: visible;
    
+}
+.sessao-contato{
+    width:100%;
+    height:100vh;
+    background-color:#242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.contato-wrapper{
+    width:60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
+}
+.contato-left{
+    width: 35%;
+    background:linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22,0.9)), url(img/dev5.jpg);
+    background-size: cover;
+}
+.contato-right{
+    width: 65%;
+    background-color: #d6dee6;
+    padding: 1rem 3rem 3rem 3rem;
+}
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-terce);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    padding:20px;
+    
+
+}
+
+.form-cadastro{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-cadastro label{
+    font-family: var(--font-terce);
+    display:inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.form-cadastro input{
+    border: none;
+    display:block;
+    background: transparent;
+    border-bottom: 2px dashed var(--color-secundary);
+    font-size: 14px;
+    width: 20rem;
+    padding: 10px;
+    margin-bottom: 2rem;
+    outline:none;
+}
+
+
+.form button{
+    height:48px;
+    width: 15rem;
+    outline: none;
+    background: var(--color-button2);
+    background: -webkit-linear-gradient(to left,var(--color-button),var(--color-button2));
+    background: linear-gradient(to left,var(--color-button),var(--color-button2));
+    background-size: 200%;
+    margin-bottom: 32px;
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border:unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.form button:hover{
+    background-position: right;
+}
+
+footer{
+    width: 100%;
+    height:7rem;
+    background-color:#17181b;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.footer-rodape{
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    color:#a7a7a7;
 }

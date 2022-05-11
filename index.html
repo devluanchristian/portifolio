@@ -14,14 +14,16 @@
 </head>
 
 <body>
+        <!--ICONE hamburguer-->
     <div class="container">
-
         <div class="hamburguer">
             <div class="line"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <span>Fechar</span>
         </div>
+        <!--FIM ICONE-->
 
-        <header>
+                <!--WALLPAPER -->
+        <header id="home">
             <div class="img-wrapper">
                 <img src="img/dev.jpg" alt="" />
             </div>
@@ -32,15 +34,16 @@
                 <button>Saiba mais</button>
             </div>
         </header>
+                <!--FIM WALLPAPER-->
 
+        <!--BACKGROUND BRANCO DO MENU-->
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"> <a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"> <a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                     </li>
                 </ul>
             </nav>
@@ -51,8 +54,10 @@
 
             </div>
         </aside>
+        <!--BACKGROUND BRANCO DO MENU FIM -->
 
-        <section class="sessao-conhecimentos">
+        <!--TELA DE CONHECIMENTOS-->
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -128,8 +133,10 @@
                 </div>
             </div>
         </section>
+        <!--FIM TELA DE CONHECIMENTOS-->
 
-        <section class="sessao-projetos">
+
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos </h1>
             </div>
@@ -163,8 +170,8 @@
                         <img src="img/proj3.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <h2>Casa </h2>
-                        <h3>HTML</h3>
+                        <h2>Login e Formularios</h2>
+                        <h3>HTML, CSS, JS</h3>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est aliquam nostrum voluptate
                             vero ad tempora excepturi natus atque ipsam.</p>
                         <button>Saiba Mais</button>
@@ -174,14 +181,38 @@
             
     </section>
 
+    <section class="sessao-contato" id="contato">
+        <div class="contato-wrapper">
+            <div class="contato-left"></div>
+            <div class="contato-right">
+                <h1>Contato</h1>
 
+                <form id="form" class="form">
+                    <div class="form-cadastro">
 
+                        <label for="username">Nome</label>
+                        <input type="text" id="username" placeholder="Digite seu nome de usuário">
+                        
+                    </div>
+            
+                    <div class="form-cadastro">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" placeholder="Digite seu E-mail">
+                        
+                    </div>
+            
+                    <button type="submit">Enviar</button>
+                 </form>
+            </div>
 
+        </div>
+    </section>
+    <footer>
+        <div class="footer-rodape">
+            <p>Copyright &copy; 2022, Developer Luan Christian Rocha do Carmo - Todos os diretos reservados</p>
+        </div>
+    </footer>
 
-
-
-
-    
     </div>
 </body>
 
