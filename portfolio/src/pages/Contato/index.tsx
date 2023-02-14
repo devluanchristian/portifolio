@@ -1,7 +1,9 @@
+import "./styles.css";
+
 const Contato = () => {
   return (
     <div>
-      <h1>PAGINA Contato</h1>
+      <h1>Pagina Contato</h1>
     </div>
   );
 };
