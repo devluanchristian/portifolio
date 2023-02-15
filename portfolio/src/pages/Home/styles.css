@@ -1,20 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 
-.topsection {
+.container-home {
+  background-color: brown;
+  height: 100vh;
+  padding: 10px 10px;
+  margin: 10px;
+}
+.container-title {
   position: absolute;
-  width: 411px;
-  height: 189px;
-  left: 140px;
+  left: 100px;
   top: 293px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 61px;
-  color: #ffffff;
+  background-color: rgb(33, 34, 34);
+  height: 50%;
+  width: 500px;
 }
 
-.topsection p {
+.container-title h1 {
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  animation: moveInRight 0.5s ease-in-out forwards;
+}
+/*animation*/
+@keyframes moveInRight {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.container-title p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -24,50 +42,14 @@
   align-items: center;
   text-align: justify;
   color: rgba(255, 255, 255, 0.5);
-  transform: rotate(-0.03deg);
-}
-.avatarAndIcons {
-  position: absolute;
-  width: auto;
-  height: 600px;
-  left: 690px;
-  top: 203px;
+  animation: moveInRight_P 0.9s ease-in-out forwards;
 }
 
-
-.dowloandCV {
-  position: absolute;
-  width: 196px;
-  height: 73px;
-  left: 1338px;
-  top: 414px;
-}
-
-@media (max-width: 760px) {
-  .topsection {
-    position: absolute;
-    width: auto;
-    height: 199.24px;
-    left: 24px;
-    top: 445px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 61px;
-    color: #ffffff;
+@keyframes moveInRight_P {
+  from {
+    transform: translateX(500px);
   }
-
-  .topsection p {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    color: rgba(255, 255, 255, 0.5);
-    transform: rotate(-0.03deg);
+  to {
+    transform: translateX(0px);
   }
 }
