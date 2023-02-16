@@ -4,6 +4,11 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiOutlineInstagram,
+  AiOutlineCloudUpload,
+  AiOutlineWhatsApp,
+  IoLocationOutline,
+  MdOutlineEmail,
+  BiUpload,
 } from "react-icons/all";
 import gif from "../../assets/gif.gif";
 
@@ -22,20 +27,41 @@ const Home = () => {
             href="https://www.linkedin.com/in/luan-christian01/"
             target={"_blank"}
           >
-            <AiFillLinkedin size={35} />
+            <AiFillLinkedin size={30} />
           </a>
           <a href="https://github.com/devluanchristian" target={"_blank"}>
-            <AiFillGithub size={35} />
+            <AiFillGithub size={30} />
           </a>
           <a>
-            <AiOutlineInstagram size={35} />
+            <AiOutlineInstagram size={30} />
           </a>
         </div>
       </div>
 
       <div className="container-right">
         <img src={imgPerfil} alt="" />
-        <a href="#">Dowload CV</a>
+        <div className="container-right-info">
+          <a>
+            <MdOutlineEmail size={20} />
+            <span>luanchristian.rochadocarmo@gmail.com</span>
+          </a>
+          <a>
+            <AiOutlineWhatsApp size={20} />
+            <span> +55 31 9 7126-2835</span>
+          </a>
+          <a>
+            <IoLocationOutline size={20} />{" "}
+            <span> Belo Horizonte, Minas Gerais - Brazil</span>
+          </a>
+          <div className="btn-cv">
+            <a
+              href="https://drive.google.com/file/d/1dcvmisGW3EZyR8Lccw_rsESvvg-9Kdn1/view?usp=sharing"
+              target={"_blank"}
+            >
+              <BiUpload size={20} /> Dowload CV
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

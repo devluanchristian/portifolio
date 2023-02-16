@@ -1,0 +1,124 @@
+.container-about {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-center {
+  color: aliceblue;
+  border: 1px solid #7142cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: 10px;
+  width: 65%;
+  height: 65%;
+  animation-name: fade-in;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.container-center h1 {
+  margin-bottom: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container-center p {
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  color: #f4f4f6;
+  text-align: justify;
+}
+
+.container-skill {
+  display: flex;
+  margin-top: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: moveInTop 3s ease-in-out forwards;
+}
+
+.container-skill ul {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+}
+.container-skill li {
+  display: flex;
+  font-size: 15px;
+  border: 2px solid #7142cb;
+  border-radius: 10px;
+  width: 100%;
+  padding: 7.5px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: all ease-in-out 0.2s;
+}
+.container-skill li:hover {
+  background-color: #7142cb;
+}
+.container-skill svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+@media (max-width: 768px) {
+  .container-about {
+    margin: 0;
+    padding: 0;
+  }
+  .container-center {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .container-center p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 22px 25px;
+  }
+  .container-skill {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container-skill ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .container-skill li {
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}

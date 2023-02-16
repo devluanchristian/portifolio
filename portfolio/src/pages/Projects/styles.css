@@ -1,4 +1,4 @@
-.container-contato {
+.container-projeto {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,12 +8,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-contato img {
+.container-projeto img {
   width: 20%;
 }
-.container-contato h1 {
+.container-projeto h1 {
   color: #fff;
 }
-.container-contato h2{
+.container-projeto h2{
     color: #999;
 }

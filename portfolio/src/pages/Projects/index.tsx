@@ -1,9 +1,9 @@
 import "./styles.css";
 import error from "../../assets/error.svg"
-const Contato = () => {
+const Projects = () => {
   return (
-    <div className="container-contato">
-      <h1>Ops.. Erro ao carregar pagina de contato</h1>
+    <div className="container-projeto">
+      <h1>Ops.. Erro ao carregar pagina de projetos</h1>
       <img src={error} alt="" />
       <h1>Calma aeeee meu pequeno gafanhoto</h1>
       <h2>Ainda estou trabalhando nessa feature</h2>
@@ -11,4 +11,4 @@ const Contato = () => {
   );
 };
 
-export default Contato;
+export default Projects;
