@@ -168,10 +168,11 @@
   align-items: center;
   justify-content: center;
 }
-.container-right-info .btn-cv {
+.container-right-info .btn-cv a{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
   border: 1px solid #7142cb;
   border-radius: 8px;
   text-decoration: none;
@@ -180,7 +181,7 @@
   margin-top: 50px;
   transition: all ease-in-out 0.3s;
 }
-.container-right-info .cv:hover {
+.container-right-info .btn-cv a:hover {
   color: #fff;
   background-color: #7142cb;
 }
@@ -227,8 +228,5 @@
     width: 400px;
     height: 400px;
   }
-  .btn-cv {
-    margin-left: 30%;
-    margin-bottom: 5%;
-  }
+
 }
