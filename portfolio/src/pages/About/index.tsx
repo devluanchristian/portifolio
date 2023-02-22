@@ -7,15 +7,16 @@ const About = () => {
       <div className="container-center">
         <h1>Sobre mim</h1>
         <p>
-          Tenho 22 anos e sou estudante apaixonado por programação, que abrange
-          tanto o Frontend quanto o Backend, meu objetivo é me tornar um
-          Desenvolvedor Full Stack de excelência. Sempre atento às tendências do
-          mercado e às novidades que surgem, busco desenvolver minhas
-          habilidades e adquirir novos conhecimentos a cada dia, a fim de
-          agregar ainda mais valor às soluções tecnológicas e inovadoras para o
-          mundo. Estou em constante busca por maneiras de aprimorar minhas
-          habilidades e adquirir novas competências para oferecer soluções ainda
-          mais eficazes e inovadoras no futuro. <br />
+          Meu nome é Luan Chrstian Rocha do Carmo, tenho 22 anos e sou estudante
+          apaixonado por programação, que abrange tanto o Frontend quanto o
+          Backend, meu objetivo é me tornar um Desenvolvedor Full Stack de
+          excelência. Sempre atento às tendências do mercado e às novidades que
+          surgem, busco desenvolver minhas habilidades e adquirir novos
+          conhecimentos a cada dia, a fim de agregar ainda mais valor às
+          soluções tecnológicas e inovadoras para o mundo. Estou em constante
+          busca por maneiras de aprimorar minhas habilidades e adquirir novas
+          competências para oferecer soluções ainda mais eficazes e inovadoras
+          no futuro. <br />
           <br /> No momento, estou à procura de minha primeira oportunidade de
           trabalho, onde possa aplicar os conhecimentos e tecnologias que venho
           estudando, e continuar crescendo e aprendendo no mercado de trabalho.

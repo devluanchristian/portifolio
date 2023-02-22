@@ -1,0 +1,107 @@
+.card-container {
+  position: relative /* para permitir a posição absoluta dos elementos filhos.*/;
+  width: 600px;
+  height: 500px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.front {
+  position: absolute;
+  width: 548px;
+  cursor: pointer;
+  height: 306.5px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  position: absolute;
+  width: 548px;
+  cursor: pointer;
+  height: 306.5px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  position: absolute;
+  width: 548px;
+  height: 306.5px;
+  backface-visibility: hidden
+    /*para ocultar a face traseira do cartão durante a rotação.*/;
+}
+
+.card-back {
+  position: absolute;
+  width: 548px;
+  height: 306.5px;
+  border: 2px solid #7142cb;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  color: aliceblue;
+  transform: rotateY(180deg);
+}
+
+.front {
+  transform: rotateY(180deg);
+  padding: auto;
+}
+.card-front img {
+  max-width: 548px;
+  border: 2px solid #7142cb;
+  border-radius: 10px;
+  height: 306.5px;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.content h2 {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.tec {
+  height: auto;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.tec i {
+  padding: 4px 20px;
+  cursor: pointer;
+  border: 2px solid #7142cb;
+}
+.tec i:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #7142cb;
+  color: aliceblue;
+}
+

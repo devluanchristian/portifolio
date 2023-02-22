@@ -11,7 +11,8 @@
 
 .container-center {
   color: aliceblue;
-  border: 1px solid #7142cb;
+  border: 2px solid #7142cb;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +22,7 @@
   width: 65%;
   height: 65%;
   animation-name: fade-in;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
 }
 .container-center h1 {
@@ -51,7 +52,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: moveInTop 3s ease-in-out forwards;
+  animation: moveInTop 2s ease forwards;
 }
 
 .container-skill ul {
