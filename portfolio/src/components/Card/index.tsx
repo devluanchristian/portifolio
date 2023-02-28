@@ -1,33 +1,40 @@
 import { useState } from "react";
-import img1 from "../../assets/projeto-sistema-chamado.jpg";
+import { AiFillGithub } from "react-icons/ai";
 import "./styles.css";
 
 interface IProps {
-  titulo: string;
-  tec: string[];
+  title: string;
+  skills: string[];
   img: string;
   children: React.ReactNode;
 }
 
-const Card = ({ titulo, tec, img, children }: IProps) => {
-  const [isRotated, setIsRotated] = useState("back");
+const Card = ({ title, skills, img, children }: IProps) => {
+  const [isFlip, setIsFlip] = useState(false);
+
+  const handleClick = () => {
+    setIsFlip(!isFlip);
+  };
 
   return (
-    <div className="card-container">
-      <div
-        className={isRotated}
-        onClick={() => setIsRotated(isRotated === "back" ? "front" : "back")}
-      >
-        <div className="card-front">
+    <div
+      className={`flip-card ${isFlip ? "flipped" : ""}`}
+      onClick={handleClick}
+    >
+      <div className="flip-card-container">
+        <div className="flip-card-front">
+          {/* Conteúdo da frente do cartão */}
           <img src={img} alt="" />
         </div>
-        <div className="card-back">
-          <div className="content">
-            <h2>{titulo}</h2>
+        <div className="flip-card-back">
+          {/* Conteúdo de trás do cartão */}
+          <div className="content-card-back">
+            <h3>{title}</h3>
             <p>{children}</p>
-            <div className="tec">
-              {tec.map((item, key) => (
-                <i key={key}>{item}</i>
+            <div className="content-tec">
+              <h5>Tecnologias utilizadas:</h5>
+              {skills.map((skill) => (
+                <i>{skill}</i>
               ))}
             </div>
           </div>

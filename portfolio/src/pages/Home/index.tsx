@@ -32,7 +32,7 @@ const Home = () => {
           <a href="https://github.com/devluanchristian" target={"_blank"}>
             <AiFillGithub size={30} />
           </a>
-          <a>
+          <a href="https://www.instagram.com/_luanzin01/" target={"_blank"}>
             <AiOutlineInstagram size={30} />
           </a>
         </div>

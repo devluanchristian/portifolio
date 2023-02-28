@@ -1,0 +1,43 @@
+.button-url {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.button-url a {
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: aliceblue;
+}
+.button-url a:hover {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #7142cb;
+  color: #7142cb;
+}
+
+.button-url svg {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .button-url {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .button-url a {
+    font-size: 11px;
+  }
+}
