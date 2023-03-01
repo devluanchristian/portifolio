@@ -1,11 +1,11 @@
 .container-contato {
-  height: 100vh;
-  width: 100%;
+  font-family: "Roboto", sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
 }
 
 .container-contato img {
@@ -14,6 +14,6 @@
 .container-contato h1 {
   color: #fff;
 }
-.container-contato h2{
-    color: #999;
+.container-contato h2 {
+  color: #999;
 }

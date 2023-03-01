@@ -185,12 +185,14 @@
   color: #fff;
   background-color: #7142cb;
 }
+.btn-cv svg {
+  font-size: 30px;
+}
 
 @media only screen and (max-width: 768px) {
   .container-home {
-    margin: auto;
-    padding: auto;
-    overflow-x: hidden;
+    
+
   }
   .container-left h1 {
     font-size: 30px;
@@ -228,9 +230,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
-  .btn-cv a {
+  .btn-cv svg {
     text-align: center;
+    font-size: 15 px;
   }
   .social {
     display: flex;

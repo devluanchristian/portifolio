@@ -58,7 +58,7 @@ const Home = () => {
               href="https://drive.google.com/file/d/1dcvmisGW3EZyR8Lccw_rsESvvg-9Kdn1/view?usp=sharing"
               target={"_blank"}
             >
-              <BiUpload size={20} />
+              <BiUpload />
               Download CV
             </a>
           </div>

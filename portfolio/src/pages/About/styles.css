@@ -90,8 +90,8 @@
 
 @media (max-width: 768px) {
   .container-about {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
   }
   .container-center {
     height: 100vh;
@@ -99,6 +99,12 @@
     margin: 0;
     padding: 0;
     border: none;
+  }
+  .container-center h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
   }
   .container-center p {
     font-size: 13px;
