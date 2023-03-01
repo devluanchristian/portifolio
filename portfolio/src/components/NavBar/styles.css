@@ -43,7 +43,8 @@
     padding: 0;
   }
   .navbar-list a {
-    font-size: 12px;
+    font-size: 9px;
+    font-weight: bold;
     margin: 0;
   }
   .navbar-container .logo {

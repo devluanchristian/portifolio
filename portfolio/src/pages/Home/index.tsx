@@ -4,7 +4,6 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiOutlineInstagram,
-  AiOutlineCloudUpload,
   AiOutlineWhatsApp,
   IoLocationOutline,
   MdOutlineEmail,
@@ -15,11 +14,14 @@ import gif from "../../assets/gif.gif";
 const Home = () => {
   return (
     <div className="container-home">
+      <div className="container-greeting">
+        <p>
+          {" "}
+          <img className="img" src={gif} />
+          Olá!! Seja bem vindo(a)
+        </p>
+      </div>
       <div className="container-left">
-        <div className="container-greeting">
-          <img className="img" src={gif} alt="" width={"30px"} /> Olá!! Seja bem
-          vindo(a)
-        </div>
         <h1>Luan Christian</h1>
         <p>Desenvolvedor FullStack Jr</p>
         <div className="social">
@@ -60,7 +62,7 @@ const Home = () => {
                 target={"_blank"}
               >
                 <BiUpload size={18} />
-                Download CV 
+                Download CV
               </a>
             </p>
           </div>

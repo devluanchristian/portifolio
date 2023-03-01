@@ -33,17 +33,34 @@ const Projects = () => {
           <ButtonUrl url={callingSystemUrl} reposUrl={reposCallingSystemUrl} />
         </Card>
 
-        <Card title={"Netflix Clone"} skills={["React", "TypeScript"]} img={img2}>
+        <Card
+          title={"Netflix Clone"}
+          skills={["React", "TypeScript"]}
+          img={img2}
+        >
           <p>
             Neste projeto, busquei aplicar o máximo de conhecimento que estou
             adquirindo ao longo do tempo, consumir uma API disponibilizada pela
             <i> TheMovieDB</i>. Coletando e estruturando os dados de forma
             adequada, utilizei extensivamente o React nessa aplicação, o que me
             permitiu aproveitar ainda mais as funcionalidades dessa ferramenta.
-          </p> <br />
+          </p>{" "}
+          <br />
           <ButtonUrl url={cloneNetflixUrl} reposUrl={reposNetflixUrl} />
         </Card>
       </div>
+      <footer>
+        <p>
+          Para verificar mais projetos{" "}
+          <a
+            href="https://github.com/devluanchristian?tab=repositories"
+            target={"_blank"}
+          >
+            acesse aqui
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 };
