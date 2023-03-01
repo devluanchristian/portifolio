@@ -100,7 +100,7 @@
   background-color: #7142cb;
   transition: all ease-in-out 0.6s;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 600px){
   .flip-card {
     display: flex;
     justify-content: center;
@@ -125,6 +125,7 @@
   .content-card-back {
     width: 100%;
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
     font-size: 12px;
